@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/src/" />
-  <Folder Name="/src/Monitor.Api/">
-    <Project Path="src/Monitor.Api/Monitor.api.csproj" />
+  <Folder Name="/src/Monitor.api/">
+    <Project Path="src/Monitor.api/Monitor.api.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Monitor.Tests/Monitor.Tests.csproj" />
