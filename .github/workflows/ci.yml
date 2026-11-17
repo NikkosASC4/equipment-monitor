@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Files
+        uses: actions/checkout@v7  
+      - name: Setup DOTNET      
+        uses: actions/setup-dotnet@v6           
+        with:
+          dotnet-version: 10.0.x
+      - name: Restore
+        run: dotnet restore            
+      - name: build
+        run: dotnet build --no-restore            
+      - name: test
+        run: dotnet test --no-build             
