@@ -1,0 +1,1 @@
+Placed SQL Server within a Docker container, making setup repeatable with one command and able to be reset cleanly, while replicating real-world work-flow. 
