@@ -15,7 +15,7 @@ public class HealthEndpointTests : IClassFixture<WebApplicationFactory<Program>>
     [Fact]
     public async Task Health_returns_200()
     {
-        var response = await _client.GetAsync("/healthz");
+        var response = await _client.GetAsync("/health");
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
